@@ -5,8 +5,9 @@ from django.db import models
 class BlogPostPreview(models.Model):
     title = models.CharField(max_length=60)
     #id = models.CharField(max_length=60)
-    md_file_path = models.CharField(max_length=60) # Path to the .md file of the blog post
-    preview_img_path = models.CharField(max_length=60)
+    md_file_path = models.CharField(max_length=1000) # Path to the .md file of the blog post
+    preview_img_path = models.CharField(max_length=1000)
+    description = models.CharField(max_length=1000)
 
     def __str__(self):
         return self.title
