@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blogapi.apps.BlogapiConfig',#//mine
     'rest_framework',
-    'corsheaders'
+    'corsheaders',
+    'markdown'
 ]
 
 MIDDLEWARE = [
